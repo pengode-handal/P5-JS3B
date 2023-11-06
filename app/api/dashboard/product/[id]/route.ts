@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client";
 import type { Product } from "@prisma/client";
-const prisma = new PrismaClient();
+import prisma from "@/app/lib/db";
+
 
 export const PATCH = async (request: Request, {params}: {params: {id: string}}) =>{
     const body: Product = await request.json();
@@ -15,7 +15,8 @@ export const PATCH = async (request: Request, {params}: {params: {id: string}}) 
             rgPrice : body.rgPrice,
             description : body.description,
             bisnisId: body.bisnisId,
-            imgLink : body.imgLink
+            imgLink : body.imgLink,
+            prodName: body.prodName
         },
     });
     return NextResponse.json(product, {status: 200});

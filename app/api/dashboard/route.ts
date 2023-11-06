@@ -14,7 +14,8 @@ export const POST = async (request: Request) => {
             rgPrice : body.rgPrice,
             description : body.description,
             bisnisId: body.bisnisId,
-            imgLink : body.imgLink
+            imgLink : body.imgLink,
+            prodName : body.prodName
         },
         
     });

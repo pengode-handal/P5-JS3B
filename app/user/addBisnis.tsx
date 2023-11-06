@@ -16,6 +16,7 @@ const AddBisnis = ({bisnisS}: {bisnisS: Bisnis[]}) => {
     const [contact, setContact] = useState("");
     const [rgPrice, setRgPrice] = useState("");
     const [imgLink, setImgLink] = useState("");
+    const [prodName, setProdName] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
     const rt = useRouter();
@@ -33,11 +34,13 @@ const AddBisnis = ({bisnisS}: {bisnisS: Bisnis[]}) => {
             contact: contact,
             rgPrice: rgPrice,
             imgLink: imgLink,
+            prodName: prodName
         })
         setCoName("");
         setIsLoading(false)
         setBisnis("");
         setDesc("");
+        setProdName("");
         setContact("");
         setRgPrice("");
         setImgLink("");
@@ -65,6 +68,18 @@ const AddBisnis = ({bisnisS}: {bisnisS: Bisnis[]}) => {
                         placeholder="e.g JO.CO"
                         value={coName}
                         onChange={(d) => setCoName(d.target.value)}
+                        />
+                    </div>
+                    <div className="form-control w-full">
+                        <label className="label font-bold">
+                            Product Name
+                        </label>
+                        <input 
+                        type="text"
+                        className="input input-bordered"
+                        placeholder="e.g Kerajinan Air Surgawi"
+                        value={prodName}
+                        onChange={(d) => setProdName(d.target.value)}
                         />
                     </div>
                     <div className="form-control w-full">

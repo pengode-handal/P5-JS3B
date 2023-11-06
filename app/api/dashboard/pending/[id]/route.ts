@@ -15,3 +15,12 @@ export const PATCH = async (request: Request, {params}: {params: {id: string}}) 
     });
     return NextResponse.json(product, {status: 200});
 }
+
+export const DELETE = async (request: Request, {params}: {params: {id: string}}) =>{
+    const product = await prisma.pending.delete({
+        where:{
+            id: Number(params.id)
+        }
+    });
+    return NextResponse.json(product, {status: 200});
+}

@@ -1,17 +1,15 @@
 
 import CardList from './components/CardList/page'
-import Navbar from './components/Navbar/page'
-import { useState } from 'react';
-
-
+import Footer from './components/Footer/route'
 
 export default function Home() {
   return (
     <>
-<main>
-  <Navbar/>
+
+  <main>
     <CardList/>
-</main>
+  </main>
+  <Footer/>
 </>
   )
 }

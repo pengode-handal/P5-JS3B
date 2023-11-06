@@ -24,6 +24,7 @@ model Bisnis {
 model Product {
   id          Int    @id @default(autoincrement())
   coName      String
+  prodName    String
   contact     String
   description String
   imgLink     String
@@ -44,6 +45,7 @@ model User {
 model Pending {
   id          Int      @id @default(autoincrement())
   coName      String
+  prodName    String
   contact     String
   description String
   imgLink     String

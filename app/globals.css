@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #455d90;
+}
+
+.img-container {
+    display: block;
+    opacity: 0.875;
+}
+
+.img-container.h img {
+    height: 100%;
+}
+
+.img-container.w img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1c2740;
+    row-gap: 2px;
+}
+
+@media (max-width: 39.9375em) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.footer .brandname {
+    opacity: 0.9;
+}
+
+.footer .brandname:hover {
+    opacity: 1;
+}
+
+.footer .brandname a {
+    font-size: 1.27rem;
+    color: white;
+}
+
+.footer .brandname a:hover {
+    color: #d10024;
+    font-size: 1.27rem;
+}
+
+.footer .copy {
+    text-align: center;
+}
+
+@media (max-width: 39.9375em) {
+    .footer .copy {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer .socials .social {
+    width: 2rem;
+    transition: all 0.2s;
+}
+
+.footer .socials .social:hover {
+    opacity: 0.9;
+}

@@ -15,6 +15,7 @@ export const POST = async (request: Request) => {
             bisnisId: body.bisnisId,
             imgLink : body.imgLink,
             status : "Pending",
+            prodName : body.prodName
         },
         
     });
