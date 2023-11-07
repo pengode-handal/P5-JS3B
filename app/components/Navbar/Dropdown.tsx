@@ -42,7 +42,7 @@ const Dropdown: React.FC<Props> = ({dashboard, action, url}) => {
                 </Menu.Item>
                 <Menu.Item>
                     {({ active }) => (
-                    <a href="wa.me/081382958004?&text=Woe+pesen+website"><button
+                    <a href="https://wa.me/6281382958004?&text=Woe+pesen+website"><button
                         className={`${
                         active ? 'bg-violet-500 text-white' : 'text-gray-900'
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}

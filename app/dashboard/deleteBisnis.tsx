@@ -13,7 +13,7 @@ const DeleteBisnis = ({ product }: { product: Product }) => {
 
   const handleDelete = async (productId: number) => {
     setIsLoading(true);
-    await axios.delete(`/api/dashboard/pending/${productId}`);
+    await axios.delete(`/api/dashboard/product/${productId}`);
     setIsLoading(false);
     router.refresh();
     setIsOpen(false);
