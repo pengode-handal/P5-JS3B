@@ -10,16 +10,14 @@ const Modal = ({ product }: { product: Product }) => {
     const handleModal = () => {
         setIsOpen(!isOpen);
     };
-    const checkKontak = (kontak: string = '') => {
+    const checkKontak = (kontak: string) => {
         if (kontak.startsWith('+628')) {
-            kontak.replace('+628', '628')
-            return kontak;
+            return kontak.replace('+628', '628');
         } else if (kontak.startsWith('08')) {
-            kontak.replace('08', '628')
-            return kontak;
+            return kontak.replace('08', '628');
         } else if (kontak.startsWith('8')) {
-            kontak.replace('8', '628')
-        } return kontak;
+            return kontak.replace('8', '628');
+        }
     }
     
     return (

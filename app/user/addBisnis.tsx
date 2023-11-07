@@ -138,7 +138,7 @@ const AddBisnis = ({bisnisS}: {bisnisS: Bisnis[]}) => {
                         <input 
                         type="text"
                         className="input input-bordered"
-                        placeholder="e.g https://drive.padma.com/asndfmckrnfirf.jpg"
+                        placeholder="e.g https://drive.padma.com/asndfmckrnfirf.jpg (3:4)"
                         value={imgLink}
                         onChange={(d) => setImgLink(d.target.value)}/>
                     </div>
