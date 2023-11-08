@@ -35,7 +35,7 @@ const Modal = ({ product }: { product: Product }) => {
                 </div>
                 <div className='modal-middle container sm:grid grid-flow-col gap-4 mt-6'>
                     <div className='sm:rounded-md overflow-hidden rounded-t-md rounded-tr-md'>
-                        <img src={product.imgLink} alt={product.coName} />
+                        <img src={product.imgLink.split(',').length === 2 ? product.imgLink.split(",")[1]: product.imgLink.split(",")[0]} alt={product.coName} />
                     </div>
                     <div className=''>
                         <ul className="menu bg-base-200 sm:w-56 sm:rounded-box rounded-b-md rounded-br-md">

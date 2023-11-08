@@ -33,7 +33,7 @@ const CardList = async () => {
   <div className="grid grid-cols-1 min-[629px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pr-2 pl-2 bg-[#455d90] h-[100%] pb-5">
   {products.map((product, index) => (
       <div className="card shadow-xl p-3 w-full bg-[#192f5a]" key={product.bisnis.id}>
-      <figure className='h-[364px]'><img className='overflow-hidden min-h-[364px]' src={product.imgLink} alt="Shoes" width={1200} height={1600}/>
+      <figure className='h-[364px]'><img className='overflow-hidden min-h-[364px]' src={product.imgLink.split(",")[0]} alt="Shoes" width={1200} height={1600}/>
       </figure>
       <div className="card-body relative">
       <div className="badge absolute right-8 top-4 badge-outline">{product.bisnis.typeProduct}</div>
