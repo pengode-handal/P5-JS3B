@@ -3,8 +3,8 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="brandname">
-                <a href="https://sma3jogja.sch.id/" target="_blank">
-                    <h1 className='font-bold'>PADMANABA</h1>
+                <a href="https://github.com/pengode-handal" target="_blank">
+                    <h1 className='font-bold'>SAIPH1337</h1>
                 </a>
             </div>
             <div className="copy">
