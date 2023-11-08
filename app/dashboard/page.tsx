@@ -6,6 +6,7 @@ import AddBisnis from './addBisnis';
 import DeleteBisnis from './deleteBisnis';
 import PendingEvent from './pendingPage';
 import DeletePending from './deletePending';
+import UpdateProduct from './updateBisnis';
 
 
 
@@ -93,8 +94,9 @@ const Dashboard = async () => {
                     <td className="px-6 py-4 text-center">{index + 1}</td>
                     <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{product.coName}</th>
                     <td className="px-6 py-4">{product.bisnis.typeProduct}</td>
-                    <td className="px-6 py-4 text-center">
+                    <td className="px-6 py-4 text-center space-x-1">
                     <DeleteBisnis product={product} />
+                    <UpdateProduct Bisnis={bisnis} product={product}/>
                     </td>
                     </tr>
                 ))}
